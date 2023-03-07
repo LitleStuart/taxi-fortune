@@ -1,10 +1,17 @@
 @import "../vars";
 
 .header {
-  text-align: center;
-  padding: 0.5em 0;
-  font-size: 1.7em;
-  font-weight: 500;
-  text-transform: uppercase;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 16px;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: capitalize;
   background-color: $first_color;
+
+  .material-icons-outlined {
+    font-size: 1em;
+  }
 }
