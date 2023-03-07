@@ -1,12 +1,12 @@
-import React from "react";
-import "./Header.scss";
+import { AppBar, Typography } from "@mui/material";
 
-const Header = () => {
+const Header = ({ title }: { title: string }) => {
   return (
-    <div className="header">
-      <span className="title">Фортуна</span>
-      <span className="material-icons-outlined">account_circle</span>
-    </div>
+    <AppBar color="primary" position="sticky">
+      <Typography variant="h4" component="h3" sx={{ p: "0.5em 16px" }}>
+        Заказы
+      </Typography>
+    </AppBar>
   );
 };
 
